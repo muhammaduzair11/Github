@@ -1,40 +1,44 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
   text-decoration: none;
 }
+
 body {
   background-color: #0c1118;
-  font-family: 'Segoe UI', sans-serif ;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
 }
 
 
 nav {
   background-color: #161c22;
   display: flex;
-  justify-content:space-between
+  justify-content: space-between
 }
 
-svg{
+svg {
   margin: 0 1px;
 }
 
-button{
+button {
   color: #000;
 }
 
-nav .left{
+nav .left {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
 }
-.left .logo{
+
+.left .logo {
   margin: 20px;
 }
-.left input{
+
+.left input {
   position: relative;
   height: 25px;
   width: 25vw;
@@ -46,62 +50,73 @@ nav .left{
   color: #fff;
   transition: width .3s linear;
 }
-.left input:focus{
+
+.left input:focus {
   width: 40vw;
 }
-.left .links a{
+
+.left .links a {
   text-decoration: none;
-  font-style: normal ;
+  font-style: normal;
   color: #fff;
   padding: 0 10px;
   font-size: small;
 }
-.left .links a:hover{
+
+.left .links a:hover {
   color: rgba(240, 246, 252, 0.7);
 }
 
-nav .right{
+nav .right {
   margin-right: 20px;
 }
-nav .right .account{
+
+nav .right .account {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
   height: 70px;
 }
-.account a{
+
+.account a {
   text-decoration: none;
   font-style: normal;
   color: #fff;
   padding: 0 5px;
 }
-.caret-down{
+
+.caret-down {
   font-size: 10px;
   margin-bottom: 5px;
 }
 
 
 
-main{
+main {
   display: flex;
   background-color: #010409;
 }
-
-.repositories{
-  background-color: #0d1118;
-  position:sticky;
-  top: 0;
-  left: 0;
-  padding: 40px;
-  height: 100vh;
-  border-right:  1px solid #30363d;
+.main{
+  display: flex;
 }
-.repo-btn{
+
+.repositories {
+background-color: #0d1118;
+position: sticky;
+top: 0;
+left: 0;
+padding: 40px;
+height: 100vh;
+border-right: 1px solid #30363d;
+}
+
+.repo-btn {
   display: flex;
   justify-content: space-between;
 }
-.repo-btn button{
+
+.repo-btn button {
   display: flex;
   align-items: center;
   color: #fff;
@@ -111,69 +126,94 @@ main{
   border: none;
   background-color: #228634;
 }
-.repo-btn button svg{
-  margin-right: 3px ;
+
+.repo-btn button svg {
+  margin-right: 3px;
 }
-.repo-btn input{
+
+.repo-btn input {
   height: 100px;
+  background-color: #0d1118;
+
 }
-.find-repo input{
+
+.find-repo input {
   height: 30px;
   margin-top: 10px;
   padding: 10px;
   width: 90%;
-  background-color:#0c1118;
+  background-color: #010409;
   outline: none;
   border: 1px solid #30363d;
   border-radius: 5px;
 }
-.links-repo{
+
+.links-repo {
   border-bottom: 1px solid #30363d;
   margin-bottom: 20px;
   height: 100%;
   width: 110%;
 }
-.links-repo a{
+
+.links-repo a {
   display: block;
-  color: #58a6ff ;
+  color: #58a6ff;
   margin: 10px 0;
 }
-.links-repo a:hover{
+
+.links-repo a:hover {
   text-decoration: underline;
 }
-.links-repo p{
+
+.links-repo p {
   margin: 20px;
 }
-.links-repo p a{
+
+.links-repo p a {
   color: #8b949e;
   font-size: 12px;
 }
-.links-repo p a:hover{
+
+.links-repo p a:hover {
   color: #58a6ff;
 }
 
 
-.recent h3{
+.recent h3 {
   font-size: 16px;
   font-weight: normal;
   padding: 10px 0;
 }
-.recent p small{
+
+.recent p small {
   color: #8b949e;
   font-size: 12px;
 }
-#mid-sec{
+
+
+
+
+
+
+
+
+
+
+
+
+#mid-sec {
   background-color: #010409;
-  
+
 }
-#mid-sec h2{
+
+#mid-sec h2 {
   color: #c9d1d9;
   font-weight: normal;
   font-size: 16px;
   margin: 20px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,45 +225,52 @@ main{
 
 
 
-.card-user{
+.card-user {
   display: flex;
   align-items: center;
   height: 50px;
   align-self: start;
 }
-.card-user img{
+
+.card-user img {
   margin: 0 10px;
 }
-.card-user p{
+
+.card-user p {
   font-size: 13px;
 }
-.card-user a{
+
+.card-user a {
   font-size: 14px;
   padding-right: 5px;
 }
-.card-user a:hover{
+
+.card-user a:hover {
   color: #58a6ff;
 }
-.card-user small{
+
+.card-user small {
   color: #8b949e;
 }
 
-.border-card{
+.border-card {
   padding: 20px;
   background-color: #0d1117;
   width: 80%;
   border: 1px solid #30363d;
   border-radius: 5px;
 }
-.border-card small{
+
+.border-card small {
   color: #8b949e;
 }
 
-.border-user{
+.border-user {
   display: flex;
   justify-content: space-between;
 }
-.border-user button{
+
+.border-user button {
   background-color: #21262d;
   display: flex;
   justify-content: center;
@@ -235,33 +282,42 @@ main{
   border-radius: 5px;
   height: 30px;
 }
-.star{
+
+.star {
   color: #8b949e;
   font-size: 18px;
   padding-right: 5px;
   padding-bottom: 2px;
 }
-.border-user img{
+
+.border-user img {
   border-radius: 50%;
   padding-right: 10px;
 }
-.border-user span{
-  display: flex; 
+
+.border-user span {
+  display: flex;
 }
-.border-user span a{
+
+.border-user span a {
   display: flex;
   align-items: center;
 }
-.border-user span a small{
+
+.border-user span a small {
   padding-left: 5px;
 }
-.border-user span a h3:hover , .border-user span a small:hover{
+
+.border-user span a h3:hover,
+.border-user span a small:hover {
   color: #58a6ff;
 }
-.border-user span small{
+
+.border-user span small {
   color: #8b949e;
 }
-.border-user h3{
+
+.border-user h3 {
   color: #c9d1d9;
   font-weight: 500;
   font-size: 16px;
@@ -269,19 +325,88 @@ main{
 
 
 
-.border-text{
+.border-text {
   padding-left: 50px;
   font-size: 14px;
 }
-.border-text p{
+
+.border-text p {
   margin-bottom: 10px;
 }
-.border-text small{
+
+.border-text small {
   padding: 5px 0;
   color: #8b949e;
 }
 
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #58a6ff;
+}
+
+footer p {
+  margin: 10px 20px;
+  color: #8b949e;
+  font-size: 12px;
+}
+
+.scnd {
+  margin-top: -5px;
+}
+
+.scnd a {
+  color: #8b949e;
+}
+
+.blue-link {
+  color: #58a6ff;
+}
+
+.footer-links-div {
+  display: flex;
+}
+
+.copyright {
+  margin: 10px 20px;
+  width: 10em;
+  height: 25px;
+}
+
+.copyright a {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+.copyright a:hover {
+  color: #8b949e;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  margin-left: 12em;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  margin-right: 50px;
+
+}
+
+.row a {
+  color: #8b949e;
+  font-size: 12px;
+  margin: 3px 0;
+}
 
 
 
@@ -291,37 +416,41 @@ main{
 
 
 
-
-
-#explore{
-  width: 40vw;
+#explore {
+  man-width: 40vw;
   padding: 0 20px;
   margin: 30px 0;
   background-color: #010409;
 }
-#explore h5{
+
+#explore h5 {
   padding-bottom: 10px;
 }
-#explore a small{
+
+#explore a small {
   color: #8b949e;
   font-size: 12px;
 }
-#explore a small:hover{
+
+#explore a small:hover {
   color: #58a6ff;
 }
 
-.explore-cards{
+.explore-cards {
   border-bottom: 1px solid;
   border-color: #21262d;
   margin: 10px 0;
 }
-.explore-cards a{
+
+.explore-cards a {
   font-size: 14px;
 }
-.explore-cards a:hover{
+
+.explore-cards a:hover {
   color: #58a6ff;
 }
-.explore-cards p small{
+
+.explore-cards p small {
   color: #8b949e;
   font-size: 12px;
 }
@@ -330,11 +459,12 @@ main{
 
 
 
-.stats{
+.stats {
   display: flex;
   margin: 5px 0;
 }
-.stats p{
+
+.stats p {
   color: #8b949e;
   font-size: 14px;
   padding-right: 10px;
@@ -342,9 +472,11 @@ main{
   justify-content: center;
   align-items: center;
 }
-.stats span{
+
+.stats span {
   color: #8b949e;
 }
+
 .stats p span.typescript {
   margin-right: 5px;
   display: block;
@@ -353,6 +485,7 @@ main{
   border-radius: 50%;
   background-color: #2b7489;
 }
+
 .stats p span.vue {
   margin-right: 5px;
   display: block;
@@ -373,8 +506,73 @@ main{
 
 
 @media (max-width: 1000px) {
-  #explore{
+  #explore {
     display: none;
     background-color: #fff;
   }
+
+  .footer-links-div {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+
+  
+  
+  
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .repositories{
+    position: relative;
+    height: 50vh;
+    margin: 20px -20px;
+    background-color: #010409;
+    padding: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+  }
+  .side-links{
+    background-color: #0d1118;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+  }
+  .repo-btn button{
+    display: none;
+  }
+  .repo-btn label{
+    margin: -30px 0;
+    padding: 0;
+  }
+  .links-repo{
+    border: none;
+  }
+  .links-repo a{
+    width: 80vw;
+  }
+  .links-repo a:nth-child(7){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #30363d;
+  }
+  .links-repo a:last-child{
+    width:max-content
+  }
+  .recent p{
+    background-color: #0d1118;
+    padding: 10px;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+  }
+  
+
 }
