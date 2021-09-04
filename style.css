@@ -15,6 +15,7 @@ body {
 
 nav {
   background-color: #161c22;
+  width: 100vw;
   display: flex;
   justify-content: space-between
 }
@@ -25,6 +26,18 @@ svg {
 
 button {
   color: #000;
+}
+
+
+
+button.bar{
+  display: none;
+  background-color: #000;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  font-weight: 100;
+  margin: 0 20px;
 }
 
 nav .left {
@@ -90,6 +103,46 @@ nav .right .account {
   font-size: 10px;
   margin-bottom: 5px;
 }
+
+
+.dropdown{
+  display: none;
+  flex-direction: column;
+  background-color: #161c22;
+  
+}
+.dropdown.active{
+  display: flex;
+
+}
+.dropdown input{
+  margin: 0 5vw;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 5px;
+  width: 90vw;
+  min-width: 200px;
+  background-color: #0c1118;
+  border: 1px solid #30363d;
+  outline: none;
+  padding: 4px 20px;
+  color: #fff;
+}
+.dropdown a{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 10px 0;
+  border-top: 1px  solid;
+  border-color: #ffffff26
+}
+.dropdown a:last-child{
+  margin-bottom: 50px;
+}
+
+
+
+
 
 
 
@@ -522,7 +575,13 @@ footer p {
 
 @media (max-width: 800px) {
 
-  
+
+  .account{
+    margin-right: 20px;
+  }
+  .account a:nth-child(1n + 2){
+    display: none;
+  }
   
   
   
@@ -531,6 +590,25 @@ footer p {
     flex-direction: column;
     
   }
+
+  .search{
+    display: none;
+  }
+  nav .left{
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left .links{
+    display: none;
+  }
+
+button.bar{
+  display: block;
+}
+
+
+
   .repositories{
     position: relative;
     height: 50vh;
